@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nanum+Gothic&family=Raleway:ital,wght@1,200&display=swap');
+:root{
+    --main-bg-color:#2874f0;;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background: var(--main-bg-color);
+    font-family: 'Lato', sans-serif;
+}
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 88px;
+    padding: 0 25px;
+}
+nav ul{
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    font-weight: bolder;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 493px;
+    height: 27px;
+    border-radius: 5px;
+    margin: 0 16px 0 56px;
+    padding: 0 12px;
+}
+.btn{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900px;
+}
+.slider{
+    margin: 17px auto;
+    width: 82vw;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+    
+}
+.slide{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: 1s ease-out 1.5s;
+}
+#Img3{
+    transform: translate(90vw);  
+}
+#Img2{
+    transition: 1s ease-out 4s;
+    transform:translate(90vw);
+}
+#Img1{
+    transform:translate(0vw);
+     
+}
+.slider img{
+    width: 80vw;
+    height: 30vw;
+    display: flex;
+}
+.card{
+    width: 95vw;
+    margin: auto;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.card-item{
+    margin: 0 20px;
+    width: 10vw;
+    display: inline-block;
+    justify-content: center;
+    flex-direction: column;
+}
+.container{
+    min-height: calc(100vh - 58px - 12vh);
+}
+.card-item img{
+    width: 160px;
+    height: 160px;
+}
+footer{
+    margin: 20px 0 0;
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
